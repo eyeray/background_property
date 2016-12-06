@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background clip</title>
+    <style>
+        .modal{
+            background:rgba(0,0,0,0.95);
+            color:rgba(255,255,255,1);
+            border:20px solid rgba(0,0,0,0.7);
+            padding: 10px;
+            /*background-clip 속성은 기본적으로 박스모델에서 어느 부분을 배경이 보이게 할 것인지를 결정한다.
+             속성으로 사용할 수 있는 값들은 border-box,padding-box,content-box가 있다.*/
+             /*border-box: 기본값 배경이 보더, 패딩 그리고 요소의 컨텐츠 영역 모두를 보이게 한다.*/
+             /*padding-box 배경이 패딩과 컨텐츠 영역만 보이도로고 한다. 보더의 영역을 침범하지 않는다.*/
+             /*conten-box: 배경이 컨텐츠 영역만 보이게 한다. 패딩 영역은 투명하게 된다.*/
+            background-clip:content-box;;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <p>This is modal box with semi-transparent borders</p>
+    </div>
+</body>
+</html>
